@@ -12,14 +12,14 @@ router.get('/', function(req, res, next) {
 
 /* GET contact add */
 router.get('/add', function(req, res, next) {
-  res.render('createContact', { title: 'Add a Contact'} );
+  res.render('contact_create', { title: 'Add a Contact'} );
 });
 
 /* POST contact add */
 router.post('/add', function(req, res, next) {
   const { firstName, lastName, emailAddress, notes } = req.body;
   if (!firstName || !lastName) {
-    res.render('createContact', { title: 'Add a Contact', msg: 'First Name and Last Name are required.' });
+    res.render('contact_create', { title: 'Add a Contact', msg: 'First Name and Last Name are required.' });
   } else {
     const newContact = {
       id: crypto.randomUUID(), // This function should generate a unique ID for the contact
@@ -47,7 +47,7 @@ router.get('/:id', function(req, res, next) {
 /* GET contact delete */
 router.get('/:id/delete', function(req, res, next) {
   const contact = contactsRepo.findById(req.params.id);
-  res.render('deleteContact', { title: 'Delete Contact', contact: contact });
+  res.render('contact_delete', { title: 'Delete Contact', contact: contact });
 });
 
 /* POST contact delete */
@@ -59,7 +59,7 @@ router.post('/:id/delete', function(req, res, next) {
 /* GET contact edit */
 router.get('/:id/edit', function(req, res, next) {
   const contact = contactsRepo.findById(req.params.id);
-  res.render('editContact', { title: 'Edit Contact', contact: contact });
+  res.render('contact_edit', { title: 'Edit Contact', contact: contact });
 });
 
 /* POST contact edit */
@@ -67,7 +67,7 @@ router.post('/:id/edit', function(req, res, next) {
   const { firstName, lastName, emailAddress, notes } = req.body;
   if (!firstName || !lastName) {
     const contact = contactsRepo.findById(req.params.id);
-    res.render('editContact', { title: 'Edit Contact', msg: 'First Name and Last Name are required.', contact: contact });
+    res.render('contact_edit', { title: 'Edit Contact', msg: 'First Name and Last Name are required.', contact: contact });
   } else {
     const updatedContact = {
       id: req.params.id,

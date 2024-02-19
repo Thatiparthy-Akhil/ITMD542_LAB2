@@ -1,24 +1,22 @@
 /* Style for Links */
+* {
+  text-align: center;
+  background-color: #ddd;
+}
+
 a.btn-link {
   display: inline-block;
   padding: 6px 12px;
   margin-right: 8px;
-  background-color: #007bff;
+  background: linear-gradient(to bottom, #4caf50, #388e3c); /* Green gradient */
   color: #fff;
   border: none;
   border-radius: 4px;
   text-decoration: none;
-  transition: background-color 0.3s;
 }
 
 h1 {
   text-align: center;
-}
-
-
-/* Change button background color on hover */
-a.btn-link:hover {
-  background-color: #0056b3;
 }
 
 /* Style for Table */
@@ -28,103 +26,58 @@ table {
 }
 
 thead {
-  background-color: #007bff;
-  color: #fff;
+  background: linear-gradient(to bottom, #4caf50, #388e3c); /* Green gradient */
+  color: #0d0d0d;
 }
 
 th, td {
   padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #070707;
 }
 
 th {
   font-weight: bold;
 }
 
-
 /* Style for View Button */
 a.btn-view {
   display: inline-block;
   padding: 6px 12px;
-  background-color: #007bff; /* Blue color for View button */
+  background: linear-gradient(to bottom, #3a21f3, #3c1ee5); /* Blue gradient for View button */
   color: #fff;
   border: none;
   border-radius: 4px;
   text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-/* Change button background color on hover */
-a.btn-view:hover {
-  background-color: #0056b3; /* Darker blue color */
 }
 
 /* Style for Edit Button */
 a.btn-edit {
   display: inline-block;
   padding: 6px 12px;
-  background-color: #ffc107; /* Yellow color for Edit button */
+  background: linear-gradient(to bottom, #ea00ff, #f500d0); /* Orange gradient for Edit button */
   color: #fff;
   border: none;
   border-radius: 4px;
   text-decoration: none;
-  transition: background-color 0.3s;
 }
-
-/* Change button background color on hover */
-a.btn-edit:hover {
-  background-color: #d39e00; /* Darker yellow color */
-}
-
 
 /* Style for Delete Button */
 button.btn-delete {
   padding: 7px 10px;
-  background-color: #dc3545; /* Red color for Delete button */
+  background: linear-gradient(to bottom, #d8f436, #afd32f); /* Red gradient for Delete button */
   color: #fff;
   border: none;
   border-radius: 4px;
   text-decoration: none;
-  transition: background-color 0.3s;
 }
 
 /* Styles for Add Contact Page */
-.add-contact-container h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.add-contact-container form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.add-contact-container form div {
-  margin-bottom: 15px;
-}
-
-.add-contact-container form label {
-  display: block;
-  font-weight: bold;
-}
-
-.add-contact-container form input[type='text'],
-.add-contact-container form input[type='email'],
-.add-contact-container form textarea {
-  width: 100%;
-  padding: 8px;
-  font-size: 16px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
 .add-contact-container form button[type='submit'],
 .add-contact-container form a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background: linear-gradient(to bottom, #f38a21, #e5a31e); /* Blue gradient */
   color: #fff;
   text-decoration: none;
   border: none;
@@ -134,40 +87,14 @@ button.btn-delete {
 
 .add-contact-container form button[type='submit']:hover,
 .add-contact-container form a:hover {
-  background-color: #0056b3;
+  background: linear-gradient(to bottom, #1ea9e5, #6215c0); /* Darker blue gradient on hover */
 }
-
 
 /* Styles for Confirm Delete Page */
-.confirm-delete-container h1 {
-  text-align: center;
-}
-
-.confirm-delete-container p {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.confirm-delete-container div {
-  margin-bottom: 10px;
-}
-
-.confirm-delete-container label {
-  font-weight: bold;
-}
-
-.confirm-delete-container span {
-  margin-left: 10px;
-}
-
-.confirm-delete-container form {
-  text-align: center;
-}
-
 .confirm-delete-container form button[type='submit'],
 .confirm-delete-container form a {
   padding: 10px 20px;
-  background-color: #dc3545; /* Red color for Confirm Delete button */
+  background: linear-gradient(to bottom, #f44336, #d32f2f); /* Red gradient for Confirm Delete button */
   color: #fff;
   text-decoration: none;
   border: none;
@@ -177,90 +104,33 @@ button.btn-delete {
 
 .confirm-delete-container form button[type='submit']:hover,
 .confirm-delete-container form a:hover {
-  background-color: #c82333; /* Darker red color on hover */
+  background: linear-gradient(to bottom, #d32f2f, #b71c1c); /* Darker red gradient on hover */
 }
 
 /* Styles for Contact Details Page */
-./* Styles for Contact Details Page */
-.contact-details-container .container h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contact-details-container .container table.table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.contact-details-container .container table.table td {
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-}
-
-.contact-details-container .container table.table td:first-child {
-  font-weight: bold;
-}
-
-.contact-details-container .container form {
-  text-align: center;
-  margin-top: 20px;
-}
-
 .contact-details-container .container button.btn-delete,
 .contact-details-container .container a.btn-edit {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background: linear-gradient(to bottom, #2196f3, #1e88e5); /* Blue gradient */
   color: #fff;
   text-decoration: none;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .contact-details-container .container button.btn-delete:hover,
 .contact-details-container .container a.btn-edit:hover {
-  background-color: #0056b3;
+  background: linear-gradient(to bottom, #1e88e5, #1565c0); /* Darker blue gradient on hover */
 }
-
 
 /* Styles for Edit Contact Page */
-.edit-container h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.edit-container form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.edit-container form div {
-  margin-bottom: 15px;
-}
-
-.edit-container form label {
-  display: block;
-  font-weight: bold;
-}
-
-.edit-container form input[type='text'],
-.edit-container form input[type='email'],
-.edit-container form textarea {
-  width: 100%;
-  padding: 8px;
-  font-size: 16px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
 .edit-container form button[type='submit'],
 .edit-container form a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background: linear-gradient(to bottom, #2196f3, #1e88e5); /* Blue gradient */
   color: #fff;
   text-decoration: none;
   border: none;
@@ -270,7 +140,7 @@ button.btn-delete {
 
 .edit-container form button[type='submit']:hover,
 .edit-container form a:hover {
-  background-color: #0056b3;
+  background: linear-gradient(to bottom, #1e88e5, #1565c0); /* Darker blue gradient on hover */
 }
 
 .edit-container .redtext {
